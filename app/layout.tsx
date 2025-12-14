@@ -25,8 +25,12 @@ export const metadata: Metadata = {
     'Property Development',
     'Bangladesh Real Estate',
   ],
-  authors: [{ name: 'Omnitrust', url: 'https://omnitrust.com' }],
+  authors: [{ name: 'Omnitrust', url: 'https://omnitrust.vercel.app/' }],
   viewport: 'width=device-width, initial-scale=1',
+
+   verification: {
+    google: 'HUhbY8Ef3BGOU6x3FitT9jS14lz0TF9ifRHR7HhZH7s', 
+  },
   // Favicon
   icons: {
     icon: '/omnitrust logo website.png',
