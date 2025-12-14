@@ -35,7 +35,7 @@ export default function HeroSection() {
       <div
         key={img.id}
         onMouseEnter={() => setHovered(img.id)}
-        onMouseLeave={() => setHovered(hovered)} // <-- keep last hovered
+        onMouseLeave={() => setHovered(hovered)} 
         className="position-relative me-2"
         style={{
           width,
@@ -81,10 +81,9 @@ export default function HeroSection() {
         {/* Mobile Carousel */}
         <div className="d-md-none">
           <Carousel
-            interval={6000}   // slow motion: 6 seconds per slide
-            controls={true}
+            interval={6000}   
             indicators={true}
-            wrap={true}       // loop 1 → 2 → 3 → 1
+            wrap={true}      
             prevIcon={
               <span
                 className="carousel-control-prev-icon bg-dark rounded-circle"

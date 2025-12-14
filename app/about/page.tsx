@@ -17,7 +17,7 @@ export default function AboutPage() {
     image: string;
   } | null>(null);
 
-  // 🔹 Managing Team Data
+  //  Managing Team Data
   const managingTeam = [
     { title: 'S. M. Morshed', body: 'Vice Chairman', email:'morshed@example.com', image: '/vice_chairman.PNG' },
     { title: 'Md. Abdul Mannan', body: 'Managing Director', email:'abdul.mannan@example.com', image: '/managing_director.PNG' },

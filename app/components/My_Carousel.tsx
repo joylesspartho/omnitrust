@@ -24,7 +24,7 @@ export default function My_Carousel() {
 
   return (
     <>
-      {/* 🔹 ORIGINAL CAROUSEL (UNCHANGED) */}
+      {/*ORIGINAL CAROUSEL (UNCHANGED) */}
       <Carousel
         interval={6000}
         controls

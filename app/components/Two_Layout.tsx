@@ -55,7 +55,7 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
           </div>
           </div>
 
-          {/* IFRAME — visible only on lg and up */}
+          {/* RIGHT IFRAME — visible only on lg and up */}
         
             <div
             className={`col-md-6 order-md-1 order-1 ${
