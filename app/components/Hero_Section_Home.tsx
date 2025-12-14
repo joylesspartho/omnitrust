@@ -47,6 +47,7 @@ export default function HeroSection() {
       >
         <Image
           src={img.image}
+            loading="lazy" 
           alt={img.title}
           width={400}
           height={ImageHeight}

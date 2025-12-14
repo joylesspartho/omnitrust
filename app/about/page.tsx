@@ -104,6 +104,7 @@ export default function AboutPage() {
               <img 
                 src={modalContent.image} 
                 alt={modalContent.title} 
+                  loading="lazy" 
                 style={{ width: '100%', height: 'auto', borderRadius: '8px' }} 
               />
               <p className='mt-3'><b>Position:</b> {modalContent.body}</p>

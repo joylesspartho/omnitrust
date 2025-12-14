@@ -76,6 +76,7 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
         src={right_videosrc}
         title="video"
         allowFullScreen
+          loading="lazy" 
       ></iframe>
       </div>
       

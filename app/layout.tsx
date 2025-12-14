@@ -46,7 +46,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Script
           src="https://kit.fontawesome.com/81742b801a.js"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
+        
         />
       </head>
       <body className={inter.className}>

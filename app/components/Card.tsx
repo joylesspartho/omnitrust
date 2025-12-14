@@ -18,12 +18,13 @@ export default function Card({ bgimg, title, body, symbol }: CardProps) {
         {bgimg && (
           <img 
             src={bgimg} 
+              loading="lazy" 
             alt="card image" 
             style={{
               width: '150px', 
               height: '180px', 
               objectFit: 'cover', 
-            
+              
               marginBottom: '1rem'
             }}
           />
