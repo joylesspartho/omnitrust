@@ -15,7 +15,8 @@ export const metadata: Metadata = {
   description:
     'OmniTrust Properties is a leading real estate and property development company in Bangladesh, delivering high-quality residential, commercial, and luxury projects. Your trusted partner for investment and property development.',
   keywords: [
-     'OmniTrust Properties Ltd.',
+     'OmniTrust Properties Ltd. Bangladesh',
+     'omnitrust',
     'Real Estate',
     'Property Developer',
     'Residential Properties',
