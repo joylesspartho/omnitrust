@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Hero from '../components/Hero';
 import TwoLayout from '../components/Two_Layout';
 import Card from '../components/Card';
+import UnderDevelopment from '../components/underdevelopment';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../components/Footer';
@@ -31,49 +32,155 @@ export default function AboutPage() {
   ];
 
   return (
-    <>
-      {/* Hero & Who We Are */}
-      <section className='py-4'>
-        <Hero HeroHeadingText='ABOUT'/>
+    <> 
+
+    <Hero HeroHeadingText='ABOUT'/>
+
+       {/* Chairman Section */}
+      <section className='bg-primary-subtle'>
         <TwoLayout 
-          leftheading='who we are'
-          leftdescription='EDISON Group ventured into the real estate sector in 2015 with a dream team dedicated to merging value and innovation in evolving real estate sector of Bangladesh'
-          right_videosrc='https://www.youtube.com/embed/N6f_sayw0mM'
-          show_video_right_side={false}
-        />
-      </section>
+        blockquote_heading='Kamrul Hassan Tarafder'
+       blockquote_subheading='___Chairman'
+      leftdescription={
+                    <>
+                      <p>
+                        It is with great pride and gratitude that I welcome you to Omnitrust Properties Ltd.
+                        At Omnitrust, we understand that real estate is more than just land and buildings—it’s
+                        about creating spaces where life unfolds, dreams are nurtured, and communities flourish.
+                        Whether we are developing residential projects, commercial spaces, or providing advisory
+                        services, our goal remains the same: to add long-term value for our clients while setting
+                        new benchmarks for quality and trust.
+                      </p>
 
-      {/* Purpose & Mission */}
-      <section className='py-4'>
-        <div className='d-flex flex-wrap justify-content-around'>
-          <div className='shadow m-2'>
-            <Card  
-              title="Purpose"
-              body="To improve the standard of living of our customers and make them happy."
-            />
-          </div>
+                      <p>
+                        Our journey has been built on a foundation of transparency, customer-centricity, and ethical
+                        practices. We take pride in being a firm that listens carefully to the needs of clients,
+                        partners with the best talent and technology, and delivers projects that stand the test of time.
+                        In a constantly evolving market, we remain agile—adapting to new trends, embracing sustainability,
+                        and innovating responsibly to shape the future of urban living.
+                      </p>
 
-          <div className='shadow m-2'>
-            <Card  
-              title="Mission"
-              body="To become the most trusted and respected real estate company in Bangladesh."
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Chairman Section */}
-      <section className='bg-light py-4'>
-        <TwoLayout 
-          leftheading='Chairman' 
-          leftsubheading='Kamrul Hassan Tarafder'
-          leftdescription='Omnitrust Real Estate has the bold vision of making high-quality and nicely designed residences that are available within the purchasing power of a wider segment of the population. We clearly understand the need for more trusted and reliable companies in the real estate sector.'
-          right_imagesrc='/chairman.jpg'
+                      <p>
+                        One of our core beliefs is that real estate is a people-first business. The relationships we build
+                        are just as important as the structures we develop. We measure our success not just in square feet,
+                        but in smiles, satisfaction, and the trust of those we serve.
+                      </p>
+                    </>
+                  }
+          right_imagesrc='/chairmansir1.jpg'
           show_video_right_side={true}
         />
       </section>
 
-      {/* Managing Team */}
+      {/*  Who We Are */}
+      <section className='py-4'>
+        {/* 
+        <TwoLayout 
+          leftheading='who we are'
+          leftdescription='Omnitrust properties Ltd. ventured into the real estate sector in 2015 with a dream team dedicated to merging value and innovation in evolving real estate sector of Bangladesh'
+          right_videosrc='https://www.youtube.com/embed/N6f_sayw0mM'
+          show_video_right_side={true}
+
+          
+        /> */}
+        <div className='container p-4'>
+          <h4 className='fw-bold text-center'>Who We Are</h4>
+          <p>Omnitrust properties Ltd. ventured into the real estate sector in 2015 with a dream team dedicated to merging value and innovation in evolving real estate sector of Bangladesh</p>
+        </div>
+      </section>
+
+      {/* Purpose & Mission */}
+      <section className='py-4'>
+        <div className='container'>
+<div className="row ">
+                  <div className="col-12 col-md-12 col-lg shadow ">
+                    <Card
+                      title="Vision"
+                      body="Building sustainable communities, meeting evolving consumer needs, and transforming urban landscapes. Being the preferred real estate partner, focusing on become the best, not just the biggest. "
+                    
+                    />
+                  </div>
+        
+                  <div className="col-12 col-md-12 col-lg shadow">
+                    <Card
+                      title="Mission"
+                      body="Creating spaces that improves lifestyles through innovative, sustainable designs.
+Delivering professional service, transparency, and seamless experiences to build trust and delight customers.
+Becoming synonymous with trust, quality, and excellence in development and property management.
+"
+                     
+                    />
+                  </div>
+        
+                </div>
+        </div>
+      </section>
+
+      <section>
+
+      </section>
+   {/* Core value Section */}
+      <section className='py-4'>
+          <div className='container-fluid'>
+            <h4 className='text-center'>Core Values</h4>
+             <div className="row core-values">
+                    <div className="col-12 col-md-12 col-lg shadow core-card">
+                      <Card
+                        title="Integrity & Fairness"
+                        body="Honesty, responsibility, and ethical conduct in all dealings"
+                        symbol="fa-balance-scale"
+                      />
+                    </div>
+          
+                    <div className="col-12 col-md-12 col-lg shadow core-card">
+                      <Card
+                        title="Excellence & Teamwork"
+                        body="Ensuring the highest standards in all endeavors being “one team"
+                        symbol="fa-handshake"
+                      />
+                    </div>
+          
+                    <div className="col-12 col-md-12 col-lg shadow core-card">
+                      {' '}
+                      <Card
+                        title="Customer focus & Services"
+                        body="Deep commitment to customer satisfaction and building strong relationship to ensure best services."
+                        symbol="fa-headset"
+                      />
+                    </div>
+                  </div>
+                  <div className="row core-values">
+                    <div className="col-12 col-md-12 col-lg shadow core-card">
+                      <Card
+                        title="Quality and excellence"
+                        body="Striving for superior construction, design, and Management"
+                        symbol="fa-star"
+                      />
+                    </div>
+          
+                    <div className="col-12 col-md-12 col-lg shadow core-card">
+                      <Card
+                        title="Innovation & Technology"
+                        body="Adopting technology & learn fast to make solutions that delight customers"
+                        symbol="fa-lightbulb"
+                      />
+                    </div>
+          
+                    <div className="col-12 col-md-12 col-lg shadow core-card">
+                      {' '}
+                      <Card
+                        title="Sustainability & Passion"
+                        body="Minimizing environmental footprint and creating green spaces. Enthusiastic teams dedicated to achieve goals"
+                        symbol="fa-leaf"
+                      />
+                    </div>
+                  </div>
+          </div>
+      </section>
+
+     
+
+      {/* Managing Team 
       <section className='py-4 bg-secondary-subtle'>
         <h4 className='text-center mb-4'>Managing Team</h4>
         <div className='d-flex flex-wrap justify-content-center justify-content-around'>
@@ -93,7 +200,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 🔹 Modal */}
+    
       <Modal show={showModal} onHide={() => setShowModal(false)} centered>
         {modalContent && (
           <>
@@ -113,8 +220,10 @@ export default function AboutPage() {
           </>
         )}
       </Modal>
-
-   
+           */}
+    <section>
+      <UnderDevelopment />
+    </section>
     </>
   );
 }

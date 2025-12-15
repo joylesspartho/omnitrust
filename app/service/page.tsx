@@ -1,7 +1,28 @@
+'use client';
+
+
+import React, { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
 import Hero from '../components/Hero';
 import Card from '../components/Card';
 import Carousel from '../components/My_Carousel';
+import UnderDevelopment from '../components/underdevelopment';
 export default function service_page(){
+
+  const [showModal, setShowModal] = useState(false);
+  const [modalContent, setModalContent] = useState<{ title: string; body: string; image: string } | null>(null);
+
+  const projects = [
+    { title: 'Twin Tower', body: 'Savar, Dhaka', image: '/prospectus6.jpeg' },
+    { title: 'Zerin Garden', body: 'Rupnagar, Mirpur, Dhaka-1216', image: '/prospectus7.jpeg' },
+  ];
+
+  const handleOpenModal = (project: { title: string; body: string; image: string }) => {
+    setModalContent(project);
+    setShowModal(true);
+  };
+
+  
     return(
         <>
       
@@ -68,12 +89,49 @@ export default function service_page(){
           </div>
         </div>
       </section>
+      <section className="py-4">
+      <div className="container">
+        <h4 className="fw-bold text-center mb-4">Developed Project</h4>
+        <div className="row justify-content-center g-3">
+          {projects.map((project, idx) => (
+            <div
+              key={idx}
+              className="col-12 col-md-6 shadow p-2"
+              style={{ cursor: 'pointer' }}
+              onClick={() => handleOpenModal(project)}
+            >
+              <Card title={project.title} body={project.body} bgimg={project.image} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 🔹 Modal */}
+      <Modal show={showModal} onHide={() => setShowModal(false)} centered size="lg">
+        {modalContent && (
+          <>
+            <Modal.Header closeButton>
+              <Modal.Title>{modalContent.title}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body className="text-center">
+              <img src={modalContent.image} alt={modalContent.title} className="img-fluid mb-3" />
+              <p>{modalContent.body}</p>
+            </Modal.Body>
+          </>
+        )}
+      </Modal>
+    </section>
          <section className='container-fluid bg-white py-4'>
+          <h4 className='fw-bold text-center'>Ongoing Project</h4>
             <div className='container'>
               <Carousel />
 
             </div>
         </section>
+
+         <section>
+              <UnderDevelopment />
+            </section>
         </>
     );
 }

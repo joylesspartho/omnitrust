@@ -11,6 +11,14 @@ export default function Footer() {
                   <b>Address:</b>
                 </li>
                 <li>Mohakhali DOHS, Road 29, Dhaka-1206</li>
+                <li>
+                  <b>Call us:</b>
+                </li>
+                <li>+880 1310-005522</li>
+                 <li>
+                  <b>E-mail:</b>
+                </li>
+                <li><a href="gmail.com">omnitrust@gmail.com</a></li>
               </ul>
             </div>
 

@@ -1,9 +1,9 @@
 'use client';
 
 type layoutprops ={
-  leftheading: string;
+  leftheading?: string;
   leftsubheading?: string;
-  leftdescription: string;
+  leftdescription:  React.ReactNode;
 
   blockquote_border_style?: string;
 
@@ -34,9 +34,9 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
               <h4 className="py-3">{leftheading}</h4>
               < h3 className="pb-3">{leftsubheading}</h3>
 
-            <p className="text-justify">
+            <div className="text-justify pb-5">
               {leftdescription}
-            </p>
+            </div>
 
             <div className="container" style={blockquote_bodytext ? { borderLeft: blockquote_border_style || '2px solid black' } : {}}>
               <blockquote> 
@@ -57,7 +57,8 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
 
           {/* RIGHT IFRAME — visible only on lg and up */}
         
-            <div
+          
+              <div
             className={`col-md-6 order-md-1 order-1 ${
               show_video_right_side ? '' : 'd-none d-lg-block'
             }`}
@@ -67,7 +68,7 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
       <img
         src={right_imagesrc}
         alt="chairman sir img"
-        style={{ width: '80%', height: '100%', objectFit: 'cover' }}
+        style={{ width: '80%', height: '', objectFit: 'cover' }}
         className="mx-auto"
       />
     ) : (
@@ -83,6 +84,7 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
     )}
   </div>
 </div>
+       
 
         </div>
       </section>
