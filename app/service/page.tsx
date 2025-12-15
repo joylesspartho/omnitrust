@@ -92,7 +92,7 @@ export default function service_page(){
       </section>
       <section className="py-4">
       <div className="container">
-        <h4 className="fw-bold text-center mb-4">Developed Project</h4>
+        <h4 className="fw-bold text-center mb-4">Handover projects</h4>
         <div className="row justify-content-center g-3">
           {projects.map((project, idx) => (
             <div
