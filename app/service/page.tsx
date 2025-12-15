@@ -13,8 +13,9 @@ export default function service_page(){
   const [modalContent, setModalContent] = useState<{ title: string; body: string; image: string } | null>(null);
 
   const projects = [
-    { title: 'Twin Tower', body: 'Savar, Dhaka', image: '/prospectus6.jpeg' },
-    { title: 'Zerin Garden', body: 'Rupnagar, Mirpur, Dhaka-1216', image: '/prospectus7.jpeg' },
+    { title: 'Operajita mension', body: 'Section-11, mirpur, Dhaka-1216', image: '/prospectus3.jpeg' },
+    { title: 'Alomgir khan tower', body: '', image: '/prospectus4.jpeg' },
+     { title: 'Khan mansion', body: '', image: '/prospectus8.jpeg' }
   ];
 
   const handleOpenModal = (project: { title: string; body: string; image: string }) => {
@@ -22,7 +23,7 @@ export default function service_page(){
     setShowModal(true);
   };
 
-  
+
     return(
         <>
       
@@ -96,7 +97,7 @@ export default function service_page(){
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="col-12 col-md-6 shadow p-2"
+              className="col-12 col-md-3 shadow p-2"
               style={{ cursor: 'pointer' }}
               onClick={() => handleOpenModal(project)}
             >
