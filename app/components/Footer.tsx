@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <>
@@ -8,27 +10,40 @@ export default function Footer() {
             <div className="col-md-4 mb-3">
               <ul className="list-unstyled">
                 <li>
-                  <b>Address:</b>
+                  <b>Address:</b>Mohakhali DOHS, Road 29, Dhaka-1206
                 </li>
-                <li>Mohakhali DOHS, Road 29, Dhaka-1206</li>
+                
                 <li>
-                  <b>Call us:</b>
+                  <b>Call us:</b>+880 1310005533
                 </li>
-                <li>+880 1310-005522</li>
+                
                  <li>
-                  <b>E-mail:</b>
+                  <b>E-mail:</b><a href="gmail.com">omnitrust@gmail.com</a>
                 </li>
-                <li><a href="gmail.com">omnitrust@gmail.com</a></li>
+               
               </ul>
             </div>
 
             {/* Empty Column (optional) */}
-            <div className="col-md-4 mb-3">
+            <div className="col-md-4 mb-4">
               {/* You can put something here later */}
+            <div className="text-md-center">
+               <div className="text-md-center">
+    <div className="text-md-center">
+          <Link href="/" className="nav-link ">Home</Link>
+          <Link href="/about" className="nav-link ">About</Link>
+          <Link href="/service" className="nav-link ">Service</Link>
+          <Link href="/contact" className="nav-link ">Contact</Link>
+  </div>
+  </div>
+
+            </div>
             </div>
 
+            
+
             {/* Social Links */}
-            <div className="col-md-4 mb-3">
+            <div className="col-md-4 ">
               <ul className="list-unstyled">
                 <li>
                   <b>Follow Us:</b>

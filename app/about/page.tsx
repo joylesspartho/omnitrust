@@ -85,7 +85,7 @@ export default function AboutPage() {
         /> */}
         <div className='container p-4'>
           <h4 className='fw-bold text-center'>Who We Are</h4>
-          <p>Omnitrust properties Ltd. ventured into the real estate sector in 2015 with a dream team dedicated to merging value and innovation in evolving real estate sector of Bangladesh</p>
+          <p>OmniTrust Properties Ltd., we build sustainable communities, deliver innovative real estate solutions, and prioritize trust, quality, and customer satisfaction in every project.</p>
         </div>
       </section>
 

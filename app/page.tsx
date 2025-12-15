@@ -13,8 +13,8 @@ export default function Home() {
       <HeroSection />
       <TwoLayout 
        leftheading='DREAM WITH US, PARTNER WITH US'
-       leftdescription=' Relax and reap the benefits of owning property in Bangladesh. See your property transform as per your dreams, sooner than you anticipated!'
-       blockquote_bodytext='  Omnitrust stays true to its commitment, guaranteeing on-time or even ahead of schedule handover, a trait that I admire them for.'
+       leftdescription=' Enjoy the comfort of owning your dream property in Bangladesh. Watch your investment grow and your vision come to life faster than expected!'
+       blockquote_bodytext='OmniTrust Properties Ltd. builds sustainable communities with integrity, innovation, and excellence, creating spaces that enhance lifestyles and deliver lasting value.'
        blockquote='❝'
        blockquote_heading=''
        blockquote_subheading=''
