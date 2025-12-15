@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   // Favicon
   icons: {
-    icon: '/omnitrust logo website.png',
+    icon: '/omnitrust logo bg white.png',
   },
 };
 
