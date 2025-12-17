@@ -9,11 +9,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const heroImages = [
 
-   { id: 1, title: 'Liberty rose vila', image: '/prospectus2.jpeg' },
-  { id: 2, title: 'Liberty najirer shopno momumai', image: '/prospectus5.jpeg' },
- { id: 3, title: 'Liberty twin tower', image: '/prospectus6.jpeg' },
-{ id: 4, title: 'Liberty zerin garden', image: '/prospectus7.jpeg' },
-  { id: 5, title: 'Liberty hanif tower', image: '/prospectus9.jpeg' },
+   { id: 1, title: 'Alomgir Khan Tower', image: '/prospectus3.png' },
+  { id: 2, title: 'Khan Mansion', image: '/prospectus4.jpeg' },
+ { id: 3, title: 'Najirer Shopno Nonunai', image: '/prospectus5.png' },
+{ id: 4, title: 'Twin Tower', image: '/prospectus6.png' },
+  { id: 5, title: 'Oparajita Mension', image: '/prospectus8.png' },
+   { id: 6, title: 'Hanif tower', image: '/prospectus9.png' },
 ];
 
 export default function My_Carousel() {

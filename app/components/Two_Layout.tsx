@@ -47,7 +47,7 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
                     </i>
                    
                     <b className="d-block text-right py-2">{blockquote_heading}</b>
-                    <p className="text-right">{blockquote_subheading}</p>
+                    <small className="text-right d-block">{blockquote_subheading}</small>
                 </h6>
               
               </blockquote>
@@ -73,7 +73,7 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
       />
     ) : (
       <div className="ratio ratio-16x9">
-<iframe
+      <iframe
         src={right_videosrc}
         title="video"
         allowFullScreen
@@ -84,7 +84,7 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
     )}
   </div>
 </div>
-       
+      
 
         </div>
       </section>

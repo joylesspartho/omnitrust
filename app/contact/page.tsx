@@ -76,16 +76,16 @@ export default function Contact() {
   <div className="container d-flex flex-wrap justify-content-around gap-3">
     
     <div className="shadow contact-page-card p-3">
-      <Card title="Marketing" body="E-mail: omnitrust@gmail.com" symbol='fa-bullhorn'/>
+      <Card title="Marketing" body="E-mail: omnitrustpropertiesltd@gmail.com" symbol='fa-bullhorn'/>
     </div>
 
     <div className="shadow contact-page-card p-3">
-      <Card title="Call Us" body="+880 1310-005522" symbol='fa-phone' />
+      <Card title="Call Us" body="+880 1310-005522, +880 1310005533 " symbol='fa-phone' />
     </div>
 
     <div className="shadow contact-page-card p-3">
       <Card
-        title="Our Address"
+        title="Corporate Office"
         body="Road 29, House 399, Mohakhali DOHS"
         symbol='fa-location-dot'
       />

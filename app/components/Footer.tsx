@@ -8,20 +8,41 @@ export default function Footer() {
           <div className="row text-left">
             {/* Address */}
             <div className="col-md-4 mb-3">
+              <div>
+                <b>Corporate office:</b>
               <ul className="list-unstyled">
                 <li>
-                  <b>Address:</b>Mohakhali DOHS, Road 29, Dhaka-1206
+                  <b>Address:</b> Mohakhali DOHS, Road #29, House #399 Dhaka-1206
                 </li>
                 
                 <li>
-                  <b>Call us:</b>+880 1310005533
+                  <b>Call us:</b> +880 1310005533
                 </li>
                 
                  <li>
-                  <b>E-mail:</b><a href="gmail.com">omnitrust@gmail.com</a>
+                  <b>E-mail:</b> <a href="gmail.com">omnitrustpropertiesltd@gmail.com</a>
                 </li>
                
               </ul>
+              </div>
+
+              <div>
+                <b>Basundhara  Office:</b>
+              <ul className="list-unstyled">
+                <li>
+                  <b>Address:</b> Rupayan Shopping Square, Level 05 Unit-603/C, Plot #02, Block-G, Basundhara R/A, Dhaka-1229
+                </li>
+                
+                <li>
+                  <b>Call us:</b> +880 1310005522
+                </li>
+                
+                 <li>
+                  <b>E-mail:</b> <a href="gmail.com">omnitrustpropertiesltd@gmail.com</a>
+                </li>
+               
+              </ul>
+              </div>
             </div>
 
             {/* Empty Column (optional) */}

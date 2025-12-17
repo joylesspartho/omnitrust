@@ -20,15 +20,16 @@ export default function AboutPage() {
 
   //  Managing Team Data
   const managingTeam = [
-    { title: 'S. M. Morshed', body: 'Vice Chairman', email:'morshed@example.com', image: '/vice_chairman.PNG' },
-    { title: 'Md. Abdul Mannan', body: 'Managing Director', email:'abdul.mannan@example.com', image: '/managing_director.PNG' },
-    { title: 'Md. Ripon Kabir Laskar', body: 'Director', email:'ripon@example.com', image: '/diroctor1.PNG' },
-    { title: 'A. F. M. Kalam Uddin', body: 'Director', email:'kalam@example.com', image: '/director2.PNG' },
-    { title: 'Abdul Jalil Liton', body: 'Director', email:'liton@example.com', image: '/director3.PNG' },
-    { title: 'Md. Rakibul Islam', body: 'Director', email:'rakibul@example.com', image: '/director4.PNG' },
-    { title: 'Hasan Mahmu', body: 'Director', email:'hasan@example.com', image: '/director5.PNG' },
-    { title: 'Homyra Rahman', body: 'Director', email:'homyra@example.com', image: '/director6.PNG' },
-    { title: 'Md. Mizanul Islam', body: 'Director', email:'mizanul@example.com', image: '/director7.PNG' },
+     { title: 'Kamrul Hassan Tarafder', body: 'Chairman', email:'kamrul@example.com', image: '/chairmansir1.jpg' },
+    { title: 'S. M. Morshed', body: 'Vice Chairman', email:'morshed@example.com', image: '/hidden profile.jpg' },
+    { title: 'Md. Abdul Mannan', body: 'Managing Director', email:'abdul.mannan@example.com', image: '/hidden profile.jpg' },
+    { title: 'Md. Ripon Kabir Laskar', body: 'Director', email:'ripon@example.com', image: '/hidden profile.jpg' },
+    { title: 'A. F. M. Kalam Uddin', body: 'Director', email:'kalam@example.com', image: '/hidden profile.jpg' },
+    { title: 'Abdul Jalil Liton', body: 'Director', email:'liton@example.com', image: '/hidden profile.jpg' },
+    { title: 'Md. Rakibul Islam', body: 'Director', email:'rakibul@example.com', image: '/hidden profile.jpg' },
+    { title: 'Hasan Mahmu', body: 'Director', email:'hasan@example.com', image: '/hidden profile.jpg' },
+    { title: 'Homyra Rahman', body: 'Director', email:'homyra@example.com', image: '/hidden profile.jpg' },
+    { title: 'Md. Mizanul Islam', body: 'Director', email:'mizanul@example.com', image: '/hidden profile.jpg' },
   ];
 
   return (
@@ -180,7 +181,7 @@ Becoming synonymous with trust, quality, and excellence in development and prope
 
      
 
-      {/* Managing Team 
+      {/* Managing Team  */}
       <section className='py-4 bg-secondary-subtle'>
         <h4 className='text-center mb-4'>Managing Team</h4>
         <div className='d-flex flex-wrap justify-content-center justify-content-around'>
@@ -220,7 +221,7 @@ Becoming synonymous with trust, quality, and excellence in development and prope
           </>
         )}
       </Modal>
-           */}
+          
     <section>
       <UnderDevelopment />
     </section>
