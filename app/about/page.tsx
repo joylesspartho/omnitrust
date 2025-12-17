@@ -27,9 +27,11 @@ export default function AboutPage() {
     { title: 'A. F. M. Kalam Uddin', body: 'Director', email:'kalam@example.com', image: '/hidden profile.jpg' },
     { title: 'Abdul Jalil Liton', body: 'Director', email:'liton@example.com', image: '/hidden profile.jpg' },
     { title: 'Md. Rakibul Islam', body: 'Director', email:'rakibul@example.com', image: '/hidden profile.jpg' },
-    { title: 'Hasan Mahmu', body: 'Director', email:'hasan@example.com', image: '/hidden profile.jpg' },
+     { title: 'Md. Mizanul Islam', body: 'Director', email:'mizanul@example.com', image: '/hidden profile.jpg' },
+  
     { title: 'Homyra Rahman', body: 'Director', email:'homyra@example.com', image: '/hidden profile.jpg' },
-    { title: 'Md. Mizanul Islam', body: 'Director', email:'mizanul@example.com', image: '/hidden profile.jpg' },
+      { title: 'Hasan Mahmu', body: 'Director', email:'hasan@example.com', image: '/hidden profile.jpg' },
+   
   ];
 
   return (
@@ -40,31 +42,47 @@ export default function AboutPage() {
        {/* Chairman Section */}
       <section className='bg-primary-subtle'>
         <TwoLayout 
-        blockquote_heading='Kamrul Hassan Tarafder'
-       blockquote_subheading='___Chairman'
+        blockquote_heading='Prof. (Dr.) Kamrul Hassan Tarafder'
+       blockquote_subheading={
+        <>
+         <small className='d-block text-right'>FCPS, FICS, FACS, FRCS (England)</small>
+          <small className='d-block text-right'>ENT & Head-Neck Specialist Surgeon</small>
+           <small className='d-block text-right'>Ex-Professor, Department of Otolaryngology</small>
+            <small className='d-block text-right'>Ex-Professor, Department of Otolaryngology & Head-Neck Surgery</small>
+             <small className='d-block text-right'>Bangladesh Medical University</small>
+        </>
+       }
+       leftheading='Chairman Message'
       leftdescription={
                     <>
-                      <p>
-                        It is with great pride and gratitude that I welcome you to Omnitrust Properties Ltd.
+                      <p >
+                        <i>
+  It is with great pride and gratitude that I welcome you to Omnitrust Properties Ltd.
                         At Omnitrust, we understand that real estate is more than just land and buildings—it’s
                         about creating spaces where life unfolds, dreams are nurtured, and communities flourish.
                         Whether we are developing residential projects, commercial spaces, or providing advisory
                         services, our goal remains the same: to add long-term value for our clients while setting
                         new benchmarks for quality and trust.
+                        </i>
+                      
                       </p>
 
-                      <p>
-                        Our journey has been built on a foundation of transparency, customer-centricity, and ethical
+                      <p >
+                      <i>
+                          Our journey has been built on a foundation of transparency, customer-centricity, and ethical
                         practices. We take pride in being a firm that listens carefully to the needs of clients,
                         partners with the best talent and technology, and delivers projects that stand the test of time.
                         In a constantly evolving market, we remain agile—adapting to new trends, embracing sustainability,
                         and innovating responsibly to shape the future of urban living.
+                      </i>
                       </p>
 
-                      <p>
-                        One of our core beliefs is that real estate is a people-first business. The relationships we build
+                      <p  >
+                      <i>
+                          One of our core beliefs is that real estate is a people-first business. The relationships we build
                         are just as important as the structures we develop. We measure our success not just in square feet,
                         but in smiles, satisfaction, and the trust of those we serve.
+                      </i>
                       </p>
                     </>
                   }
