@@ -10,7 +10,7 @@ type layoutprops ={
   blockquote?: string;
   blockquote_bodytext?: string;
   blockquote_heading?: string;
-  blockquote_subheading?: string;
+  blockquote_subheading?: React.ReactNode;
 
    show_video_right_side?: boolean;
   right_videosrc?: string;
