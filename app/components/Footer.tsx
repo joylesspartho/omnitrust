@@ -20,7 +20,7 @@ export default function Footer() {
                 </li>
                 
                  <li>
-                  <b>E-mail:</b> <a href="gmail.com">omnitrustpropertiesltd@gmail.com</a>
+                  <b>E-mail:</b> <a href="gmail.com">info@omnitrust.com</a>
                 </li>
                
               </ul>
@@ -38,7 +38,7 @@ export default function Footer() {
                 </li>
                 
                  <li>
-                  <b>E-mail:</b> <a href="gmail.com">omnitrust@gmail.com</a>
+                  <b>E-mail:</b> <a href="gmail.com">omnitrustbd@gmail.com</a>
                 </li>
                
               </ul>

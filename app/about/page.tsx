@@ -20,7 +20,7 @@ export default function AboutPage() {
 
   //  Managing Team Data
   const managingTeam = [
-     { title: 'Kamrul Hassan Tarafder', body: 'Chairman', email:'kamrul@example.com', image: '/chairmansir1.jpg' },
+     { title: 'Kamrul Hassan Tarafder', body: 'Chairman', email:'kamrul@example.com', image: '/chairman.png' },
     { title: 'S. M. Morshed', body: 'Vice Chairman', email:'morshed@example.com', image: '/hidden profile.jpg' },
     { title: 'Md. Abdul Mannan', body: 'Managing Director', email:'abdul.mannan@example.com', image: '/hidden profile.jpg' },
     { title: 'Md. Ripon Kabir Laskar', body: 'Director', email:'ripon@example.com', image: '/hidden profile.jpg' },
@@ -86,7 +86,7 @@ export default function AboutPage() {
                       </p>
                     </>
                   }
-          right_imagesrc='/chairmansir1.jpg'
+          right_imagesrc='/chairman.png'
           show_video_right_side={true}
         />
       </section>
