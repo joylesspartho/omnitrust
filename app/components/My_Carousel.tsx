@@ -48,6 +48,7 @@ export default function My_Carousel() {
                   alt={img.title}
                   width={800}
                   height={400}
+                   loading="lazy"
                   style={{ width: '100%', height: 'auto' }}
                 />
               </div>
@@ -59,6 +60,7 @@ export default function My_Carousel() {
                   alt={img.title}
                   width={1200}
                   height={500}
+                   loading="lazy"
                   style={{
                     width: '100%',
                     height: '700px',
@@ -111,6 +113,7 @@ export default function My_Carousel() {
                   alt={img.title}
                   width={1400}
                   height={700}
+                   loading="lazy"
                   style={{
                     width: '100%',
                     height: '70vh',

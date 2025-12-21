@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 type layoutprops ={
   leftheading?: string;
   leftsubheading?: string;
@@ -65,7 +65,7 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
           >
             <div className="container ">
     {right_imagesrc ? (
-      <img
+      <Image
         src={right_imagesrc}
         alt="chairman sir img"
         style={{ width: '80%', height: '', objectFit: 'cover' }}

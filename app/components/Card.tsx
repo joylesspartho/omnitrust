@@ -1,6 +1,7 @@
 'use client';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Image from 'next/image';
 
 type CardProps = {
   bgimg?: string;        // card top image
@@ -16,7 +17,7 @@ export default function Card({ bgimg, title, body, symbol }: CardProps) {
         
         {/* Top Image */}
         {bgimg && (
-          <img 
+          <Image 
             src={bgimg} 
               loading="lazy" 
             alt="card image" 
