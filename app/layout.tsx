@@ -11,11 +11,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'OmniTrust Properties Ltd. | Trusted Real Estate & Development Company',
+  title: 'Omnitrust Properties Ltd. | Trusted Real Estate & Development Company',
   description:
-    'OmniTrust Properties is a leading real estate and property development company in Bangladesh, delivering high-quality residential, commercial, and luxury projects. Your trusted partner for investment and property development.',
+    'Omnitrust Properties is a leading real estate and property development company in Bangladesh, delivering high-quality residential, commercial, and luxury projects. Your trusted partner for investment and property development.',
   keywords: [
-     'OmniTrust Properties Ltd. Bangladesh',
+     'Omnitrust Properties Ltd. Bangladesh',
      'omnitrust',
     'Real Estate',
     'Property Developer',

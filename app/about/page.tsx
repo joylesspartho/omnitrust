@@ -20,7 +20,7 @@ export default function AboutPage() {
 
   //  Managing Team Data
   const managingTeam = [
-     { title: 'Kamrul Hassan Tarafder', body: 'Chairman', email:'kamrul@example.com', image: '/chairman.png' },
+     { title: 'Prof (Dr.) Kamrul Hassan Tarafder', body: 'Chairman', email:'kamrul@example.com', image: '/chairman.png' },
     { title: 'S. M. Morshed', body: 'Vice Chairman', email:'morshed@example.com', image: '/hidden profile.jpg' },
     { title: 'Md. Abdul Mannan', body: 'Managing Director', email:'abdul.mannan@example.com', image: '/hidden profile.jpg' },
     { title: 'Md. Ripon Kabir Laskar', body: 'Director', email:'ripon@example.com', image: '/hidden profile.jpg' },
@@ -30,7 +30,7 @@ export default function AboutPage() {
      { title: 'Md. Mizanul Islam', body: 'Director', email:'mizanul@example.com', image: '/hidden profile.jpg' },
   
     { title: 'Homyra Rahman', body: 'Director', email:'homyra@example.com', image: '/hidden profile.jpg' },
-      { title: 'Hasan Mahmu', body: 'Director', email:'hasan@example.com', image: '/hidden profile.jpg' },
+      { title: 'Eng. Hasan Mahmud', body: 'Director', email:'hasan@example.com', image: '/hidden profile.jpg' },
    
   ];
 
@@ -203,7 +203,7 @@ Becoming synonymous with trust, quality, and excellence in development and prope
 
       {/* Managing Team  */}
       <section className='py-4 bg-secondary-subtle'>
-        <h4 className='text-center mb-4'>Managing Team</h4>
+        <h4 className='text-center mb-4'>Board of Directors</h4>
         <div className='d-flex flex-wrap justify-content-center justify-content-around'>
           {managingTeam.map((member, idx) => (
             <div 
