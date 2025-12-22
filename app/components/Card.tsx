@@ -6,7 +6,7 @@ import Image from 'next/image';
 type CardProps = {
   bgimg?: string;        // card top image
   title: string;
-  body?: string;
+  body?:  React.ReactNode;
   symbol?: string;
 };
 
@@ -17,18 +17,18 @@ export default function Card({ bgimg, title, body, symbol }: CardProps) {
         
         {/* Top Image */}
         {bgimg && (
-          <Image 
-            src={bgimg} 
-              loading="lazy" 
-            alt="card image" 
-            style={{
-              width: '150px', 
-              height: '180px', 
-              objectFit: 'cover', 
-              
-              marginBottom: '1rem'
-            }}
-          />
+          <img
+  src={bgimg}
+  loading="lazy"
+  alt="card image"
+  className="
+    w-[150px]
+    h-[180px]
+    object-cover
+    mb-4
+    mx-auto
+  "
+/>
         )}
 
         {/* Optional Icon */}

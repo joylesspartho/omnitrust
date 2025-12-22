@@ -13,9 +13,9 @@ export default function service_page(){
   const [modalContent, setModalContent] = useState<{ title: string; body: string; image: string } | null>(null);
 
   const projects = [
-    { title: 'Rose Villa', body: 'Section-09, Mirpur, Dhaka-1216', image: '/prospectus2.png' },
+    { title: 'Khan Mansion', body: 'plot-18,Road-05,Section-06,Mirpur-11,Dhaka-1216.', image: '/prospectus4.png' },
    
-     { title: 'Zerin Garden', body: 'Rupnagar, Mirpur, Dhaka 1216', image: '/prospectus7.png' }
+     { title: 'Oparajita Mension', body: 'House No #13&#15, Road #01 Block #F, Section #11, Mirpur, Dhaka-1316', image: '/prospectus8.png' }
   ];
 
   const handleOpenModal = (project: { title: string; body: string; image: string }) => {

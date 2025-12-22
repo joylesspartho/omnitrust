@@ -27,22 +27,22 @@ export default function Contact() {
     try {
       // Send to Admin
       await emailjs.send(
-        'service_jwu5o5d', 
-        'template_admin', 
+        'service_gzy08k9',  //service id
+        'template_6h92vac', //tamplete id get admin
         formData, 
-        'ylJxLrn8phBAyNMLq'
+        'KZlDrf0q2M1Yw9grt'  //api key
       );
 
       // Send confirmation to User
       await emailjs.send(
-        'service_jwu5o5d',
-        'template_users', 
+        'service_gzy08k9',  //service id
+        'template_oehvid9',  //tamplete id get user
         {
           to_name: formData.name,
           to_email: formData.email,
           message: formData.message,
         },
-        'ylJxLrn8phBAyNMLq'
+        'KZlDrf0q2M1Yw9grt' //api key
       );
 
       alert('Your message has been sent! We will get back to you shortly.');
@@ -76,7 +76,7 @@ export default function Contact() {
   <div className="container d-flex flex-wrap justify-content-around gap-3">
     
     <div className="shadow contact-page-card p-3">
-      <Card title="Marketing" body="E-mail: omnitrustpropertiesltd@gmail.com" symbol='fa-bullhorn'/>
+      <Card title="Marketing" body={ <>E-mail:<a href="mailto:customercare@omnitrust.com.bd">customercare@omnitrust.com.bd</a></>} symbol='fa-bullhorn'/>
     </div>
 
     <div className="shadow contact-page-card p-3">

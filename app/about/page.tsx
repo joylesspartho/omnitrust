@@ -53,8 +53,12 @@ export default function AboutPage() {
         </>
        }
        leftheading='Chairman Message'
+       
       leftdescription={
                     <>
+       
+                    <div className='container' style={{borderLeft: '5px solid black'}}>
+                        <span className="display-4">❝</span>
                       <p >
                         <i>
   It is with great pride and gratitude that I welcome you to Omnitrust Properties Ltd.
@@ -84,8 +88,10 @@ export default function AboutPage() {
                         but in smiles, satisfaction, and the trust of those we serve.
                       </i>
                       </p>
+                    </div>
                     </>
                   }
+                  
           right_imagesrc='/chairman.png'
           show_video_right_side={true}
         />

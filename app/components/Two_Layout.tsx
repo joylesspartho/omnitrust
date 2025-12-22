@@ -67,9 +67,11 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
     {right_imagesrc ? (
       <Image
         src={right_imagesrc}
-        alt="chairman sir img"
-        style={{ width: '80%', height: '', objectFit: 'cover' }}
-        className="mx-auto"
+    alt="chairman sir img"
+    width={0}
+    height={0}
+    sizes="80vw"
+    className="w-full h-auto object-cover"
       />
     ) : (
       <div className="ratio ratio-16x9">

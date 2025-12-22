@@ -9,11 +9,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const heroImages = [
 
-   { id: 1, title: 'Alomgir Khan Tower', image: '/prospectus3.png' },
-  { id: 2, title: 'Khan Mansion', image: '/prospectus4.jpeg' },
+  { id: 1, title: 'Rose Villa', image: '/prospectus2.png' },
+   { id: 2, title: 'Alomgir Khan Tower', image: '/prospectus3.png' },
+
  { id: 3, title: 'Najirer Shopno Nonunai', image: '/prospectus5.png' },
 { id: 4, title: 'Twin Tower', image: '/prospectus6.png' },
-  { id: 5, title: 'Oparajita Mension', image: '/prospectus8.png' },
+  { id: 5, title: 'Zerin Garden', image: '/prospectus7.png' },
+
    { id: 6, title: 'Hanif tower', image: '/prospectus9.png' },
 ];
 
