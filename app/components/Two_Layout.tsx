@@ -8,6 +8,7 @@ type layoutprops ={
   blockquote_border_style?: string;
 
   blockquote?: string;
+    blockquoteclose?: string;
   blockquote_bodytext?: string;
   blockquote_heading?: string;
   blockquote_subheading?: React.ReactNode;
@@ -17,12 +18,13 @@ type layoutprops ={
   right_imagesrc?: string;
 
  
+ 
 
  
 
 }
 
-export default function TwoLayout({leftheading, leftsubheading, leftdescription,blockquote,blockquote_border_style, blockquote_bodytext, blockquote_heading, blockquote_subheading,show_video_right_side,right_imagesrc, right_videosrc }: layoutprops) {
+export default function TwoLayout({leftheading, leftsubheading, leftdescription,blockquote,  blockquoteclose,blockquote_border_style, blockquote_bodytext, blockquote_heading, blockquote_subheading,show_video_right_side,right_imagesrc, right_videosrc }: layoutprops) {
   return (
     <>
       <section className=" py-5 bg-light container">
@@ -45,11 +47,14 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
                     <i>
                      {blockquote_bodytext}
                     </i>
-                   
+                     
                     <b className="d-block text-right py-2">{blockquote_heading}</b>
+                    <br />
+                     <span className="display-4 d-block text-end">{blockquoteclose}</span>
+                    
                     <small className="text-right d-block">{blockquote_subheading}</small>
                 </h6>
-              
+            
               </blockquote>
             </div>
           </div>
@@ -67,7 +72,7 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
     {right_imagesrc ? (
       <Image
         src={right_imagesrc}
-    alt="chairman sir img"
+    alt="right img"
     width={0}
     height={0}
     sizes="80vw"

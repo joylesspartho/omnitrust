@@ -9,6 +9,8 @@ import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../components/Footer';
 
+export const dynamic = "force-static";
+
 export default function AboutPage() {
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState<{
@@ -22,14 +24,13 @@ export default function AboutPage() {
   const managingTeam = [
      { title: 'Prof (Dr.) Kamrul Hassan Tarafder', body: 'Chairman', email:'kamrul@example.com', image: '/chairman.png' },
     { title: 'S. M. Morshed', body: 'Vice Chairman', email:'morshed@example.com', image: '/hidden profile.jpg' },
-    { title: 'Md. Abdul Mannan', body: 'Managing Director', email:'abdul.mannan@example.com', image: '/hidden profile.jpg' },
+    { title: 'Md. Abdul Mannan', body: 'Director', email:'abdul.mannan@example.com', image: '/hidden profile.jpg' },
     { title: 'Md. Ripon Kabir Laskar', body: 'Director', email:'ripon@example.com', image: '/hidden profile.jpg' },
     { title: 'A. F. M. Kalam Uddin', body: 'Director', email:'kalam@example.com', image: '/hidden profile.jpg' },
     { title: 'Abdul Jalil Liton', body: 'Director', email:'liton@example.com', image: '/hidden profile.jpg' },
     { title: 'Md. Rakibul Islam', body: 'Director', email:'rakibul@example.com', image: '/hidden profile.jpg' },
      { title: 'Md. Mizanul Islam', body: 'Director', email:'mizanul@example.com', image: '/hidden profile.jpg' },
   
-    { title: 'Homyra Rahman', body: 'Director', email:'homyra@example.com', image: '/hidden profile.jpg' },
       { title: 'Eng. Hasan Mahmud', body: 'Director', email:'hasan@example.com', image: '/hidden profile.jpg' },
    
   ];
@@ -43,6 +44,8 @@ export default function AboutPage() {
       <section className='bg-primary-subtle'>
         <TwoLayout 
         blockquote_heading='Prof. (Dr.) Kamrul Hassan Tarafder'
+       
+     
        blockquote_subheading={
         <>
          <small className='d-block text-right'>FCPS, FICS, FACS, FRCS (England)</small>
@@ -57,8 +60,8 @@ export default function AboutPage() {
       leftdescription={
                     <>
        
-                    <div className='container' style={{borderLeft: '5px solid black'}}>
-                        <span className="display-4">❝</span>
+                    <div className='container' >
+                 
                       <p >
                         <i>
   It is with great pride and gratitude that I welcome you to Omnitrust Properties Ltd.
@@ -88,6 +91,8 @@ export default function AboutPage() {
                         but in smiles, satisfaction, and the trust of those we serve.
                       </i>
                       </p>
+
+                 {/*   <span className="display-4">❞</span> */}
                     </div>
                     </>
                   }

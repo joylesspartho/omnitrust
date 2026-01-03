@@ -12,11 +12,11 @@ export default function Footer() {
                 <b>Corporate office:</b>
               <ul className="list-unstyled">
                 <li>
-                  <b>Address:</b> Mohakhali DOHS, Road #29, House #399 Dhaka-1206
+                   Mohakhali DOHS, Road #29, House #399 Dhaka-1206
                 </li>
                 
                 <li>
-                  <b>Call us:</b> +880 1310005533
+                  <b>Call us:</b> +880 1310 00 55 33
                 </li>
                 
                  <li>
@@ -30,16 +30,10 @@ export default function Footer() {
                 <b>Basundhara  Office:</b>
               <ul className="list-unstyled">
                 <li>
-                  <b>Address:</b> Rupayan Shopping Square, Level 05 Unit-603/C, Plot #02, Block-G, Basundhara R/A, Dhaka-1229
+                   Rupayan Shopping Square, Level 05 Unit-603/C, Plot #02, Block-G, Basundhara R/A, Dhaka-1229
                 </li>
                 
-                <li>
-                  <b>Call us:</b> +880 1310005522
-                </li>
-                
-                 <li>
-                  <b>E-mail:</b> <a href="gmail.com">omnitrustbd@gmail.com</a>
-                </li>
+               
                
               </ul>
               </div>

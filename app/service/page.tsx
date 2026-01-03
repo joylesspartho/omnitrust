@@ -7,6 +7,10 @@ import Hero from '../components/Hero';
 import Card from '../components/Card';
 import Carousel from '../components/My_Carousel';
 import UnderDevelopment from '../components/underdevelopment';
+
+export const dynamic = "force-static";
+
+
 export default function service_page(){
 
   const [showModal, setShowModal] = useState(false);

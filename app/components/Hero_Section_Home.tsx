@@ -6,9 +6,9 @@ import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const heroImages = [
-  { id: 1, title: 'classical', image: '/classical hero.jpg' },
-  { id: 2, title: 'luxury', image: '/luxury hero.png' },
-  { id: 3, title: 'commercial', image: '/commercial hero.jpg' },
+  { id: 1, title: 'Urban Development', image: '/urban building.png' },
+  { id: 2, title: 'luxury', image: '/luxery.jpg' },
+  { id: 3, title: 'commercial', image: '/commercial.jpg' },
 ];
 
 export default function HeroSection() {

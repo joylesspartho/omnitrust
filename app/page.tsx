@@ -6,6 +6,7 @@ import TwoLayout from './components/Two_Layout';
 
 
 
+
 export default function Home() {
   return (
     <>
@@ -17,7 +18,8 @@ export default function Home() {
        blockquote_bodytext='Omnitrust Properties Ltd. builds sustainable communities with integrity, innovation, and excellence, creating spaces that enhance lifestyles and deliver lasting value.'
        blockquote='❝'
        blockquote_heading='Omnitrust Properties Ltd.'
-       blockquote_subheading='A concern of Liberty Group'
+       blockquote_subheading=''
+        blockquoteclose='❞'
        show_video_right_side={false}
        right_imagesrc='/home page right section picture.jpg'
      />
