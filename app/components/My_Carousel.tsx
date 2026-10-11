@@ -31,6 +31,8 @@ export default function My_Carousel() {
         controls
         indicators
         wrap
+         prevLabel=""
+        nextLabel=""
         prevIcon={<span className="carousel-control-prev-icon bg-dark rounded-circle" />}
         nextIcon={<span className="carousel-control-next-icon bg-dark rounded-circle" />}
       >
@@ -50,7 +52,8 @@ export default function My_Carousel() {
                   alt={img.title}
                   width={800}
                   height={400}
-                   loading="lazy"
+                  priority={index === 0}  // ✅ শুধু প্রথমটা priority
+    loading={index === 0 ? undefined : "lazy"}  // ✅ বাকিগুলো lazy
                   style={{ width: '100%', height: 'auto' }}
                 />
               </div>
@@ -62,7 +65,8 @@ export default function My_Carousel() {
                   alt={img.title}
                   width={1200}
                   height={500}
-                   loading="lazy"
+                   priority={index === 0}  // ✅ শুধু প্রথমটা priority
+    loading={index === 0 ? undefined : "lazy"}  // ✅ বাকিগুলো lazy
                   style={{
                     width: '100%',
                     height: '700px',
@@ -108,23 +112,24 @@ export default function My_Carousel() {
             wrap
           >
 
-            {heroImages.map((img) => (
-              <Carousel.Item key={img.id}>
-                <Image
-                  src={img.image}
-                  alt={img.title}
-                  width={1400}
-                  height={700}
-                   loading="lazy"
-                  style={{
-                    width: '100%',
-                    height: '70vh',
-                    objectFit: 'contain',
-                    backgroundColor: '#000',
-                  }}
-                />
-              </Carousel.Item>
-            ))}
+            {heroImages.map((img, index) => (  // ← index যোগ করুন
+  <Carousel.Item key={img.id}>
+    <Image
+      src={img.image}
+      alt={img.title}
+      width={1400}
+      height={700}
+      priority={index === 0}  // ← এখন index পাওয়া যাচ্ছে
+      loading={index === 0 ? undefined : "lazy"}  // ← এখন index পাওয়া যাচ্ছে
+      style={{
+        width: '100%',
+        height: '70vh',
+        objectFit: 'contain',
+        backgroundColor: '#000',
+      }}
+    />
+  </Carousel.Item>
+))}
           </Carousel>
         </Modal.Body>
       </Modal>

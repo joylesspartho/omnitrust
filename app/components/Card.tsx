@@ -17,17 +17,17 @@ export default function Card({ bgimg, title, body, symbol }: CardProps) {
         
         {/* Top Image */}
         {bgimg && (
-          <img
+      <img
   src={bgimg}
+  
   loading="lazy"
-  alt="card image"
-  className="
-    w-[150px]
-    h-[180px]
-    object-cover
-    mb-4
-    mx-auto
-  "
+  alt={title}
+  className="img-fluid mb-3 mx-auto d-block"
+  style={{
+    width: "100%",
+    height: "260px",
+    objectFit: "contain",
+  }}
 />
         )}
 

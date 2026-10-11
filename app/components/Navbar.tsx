@@ -17,9 +17,9 @@ export default function AppNavbar() {
         <Navbar.Brand>
           <Link href="/">
             <img
-              src="/omnitrust logo website1.png"
-              alt="OmniTrust Logo"
-              style={{ maxHeight: '60px' }}
+              src="/favicon.png"
+              alt="Omnitrust Properties Ltd."
+              style={{ maxHeight: '80px' }}
             />
           </Link>
         </Navbar.Brand>

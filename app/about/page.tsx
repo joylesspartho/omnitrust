@@ -43,18 +43,10 @@ export default function AboutPage() {
        {/* Chairman Section */}
       <section className='bg-primary-subtle'>
         <TwoLayout 
-        blockquote_heading='Prof. (Dr.) Kamrul Hassan Tarafder'
        
-     
-       blockquote_subheading={
-        <>
-         <small className='d-block text-right'>FCPS, FICS, FACS, FRCS (England)</small>
-          <small className='d-block text-right'>ENT & Head-Neck Specialist Surgeon</small>
-           <small className='d-block text-right'>Ex-Professor, Department of Otolaryngology</small>
-            <small className='d-block text-right'>Ex-Professor, Department of Otolaryngology & Head-Neck Surgery</small>
-             <small className='d-block text-right'>Bangladesh Medical University</small>
-        </>
-       }
+       
+      
+      
        leftheading='Chairman Message'
        
       leftdescription={
@@ -98,6 +90,20 @@ export default function AboutPage() {
                   }
                   
           right_imagesrc='/chairman.png'
+
+
+           blockquote_heading='Prof. (Dr.) Kamrul Hassan Tarafder'
+          blockquote_subheading={
+        <>
+         <small className='d-block text-right'>FCPS, FICS, FACS, FRCS (England)</small>
+          <small className='d-block text-right'>ENT & Head-Neck Specialist Surgeon</small>
+           <small className='d-block text-right'>Ex-Professor, Department of Otolaryngology</small>
+            <small className='d-block text-right'>Ex-Professor, Department of Otolaryngology & Head-Neck Surgery</small>
+             <small className='d-block text-right'>Bangladesh Medical University</small>
+        </>
+       }
+
+       
           show_video_right_side={true}
         />
       </section>
@@ -153,9 +159,9 @@ Becoming synonymous with trust, quality, and excellence in development and prope
       </section>
    {/* Core value Section */}
       <section className='py-4'>
-          <div className='container-fluid'>
+          <div className='container'>
             <h4 className='text-center'>Core Values</h4>
-             <div className="row core-values">
+             <div className="row core-values ">
                     <div className="col-12 col-md-12 col-lg shadow core-card">
                       <Card
                         title="Integrity & Fairness"
@@ -213,14 +219,15 @@ Becoming synonymous with trust, quality, and excellence in development and prope
      
 
       {/* Managing Team  */}
-      <section className='py-4 bg-secondary-subtle'>
-        <h4 className='text-center mb-4'>Board of Directors</h4>
+      <section className='py-4 bg-light container-fluid'>
+        <div className='container'>
+          <h4 className='text-center mb-4'>Board of Directors</h4>
         <div className='d-flex flex-wrap justify-content-center justify-content-around'>
           {managingTeam.map((member, idx) => (
             <div 
               className='shadow m-2' 
               key={idx} 
-              style={{ cursor: 'pointer' }}
+              style={{ cursor: 'pointer', fontSize: '14pt' }}
               onClick={() => {
                 setModalContent(member);
                 setShowModal(true);
@@ -229,6 +236,7 @@ Becoming synonymous with trust, quality, and excellence in development and prope
               <Card bgimg={member.image} title={member.title} body={member.body} />
             </div>
           ))}
+        </div>
         </div>
       </section>
 
@@ -253,9 +261,12 @@ Becoming synonymous with trust, quality, and excellence in development and prope
         )}
       </Modal>
           
-    <section>
-      <UnderDevelopment />
-    </section>
+    {/*
+         <section>
+              <UnderDevelopment />
+            </section>
+
+            */}
     </>
   );
 }

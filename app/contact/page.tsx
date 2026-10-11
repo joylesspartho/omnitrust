@@ -76,20 +76,29 @@ export default function Contact() {
       </section>
 
      <section className="py-4">
-  <div className="container d-flex flex-wrap justify-content-around gap-3">
+  <div className="container d-flex  justify-content-around gap-2 flex-wrap">
     
     <div className="shadow contact-page-card p-3">
-      <Card title="Marketing" body={ <>E-mail:<a href="mailto:customer-care@omnitrust.com.bd">customer-care@omnitrust.com.bd</a></>} symbol='fa-bullhorn'/>
+      <Card title="Marketing" body={ <>E-mail: <br></br><a href="mailto:info@omnitrust.com.bd">info@omnitrust.com.bd</a></>} symbol='fa-bullhorn'/>
     </div>
 
     <div className="shadow contact-page-card p-3">
-      <Card title="Call Us" body="+880 1310 00 55 33 " symbol='fa-phone' />
+      <Card
+  title="Call Us"
+  body={
+    <>
+    
+      +880 13 10 00 55 33
+    </>
+  }
+  symbol="fa-phone"
+/>
     </div>
 
     <div className="shadow contact-page-card p-3">
       <Card
         title="Corporate Office"
-        body="Road 29, House 399, Mohakhali DOHS, Dhaka-1206"
+        body="Suite #B-01, H#442, R#30, DOHS Mohakhali, Dhaka-1206"
         symbol='fa-location-dot'
       />
     </div>

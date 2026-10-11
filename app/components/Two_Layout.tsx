@@ -75,6 +75,7 @@ export default function TwoLayout({leftheading, leftsubheading, leftdescription,
     alt="right img"
     width={0}
     height={0}
+    priority
     sizes="80vw"
     className="w-full h-auto object-cover"
       />

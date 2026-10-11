@@ -6,8 +6,8 @@ import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const heroImages = [
-  { id: 1, title: 'Urban Development', image: '/urban building.png' },
-  { id: 2, title: 'luxury', image: '/luxery.jpg' },
+  { id: 1, title: 'Urban Development', image: '/urban-building.png' },
+  { id: 2, title: 'luxury', image: '/ShipuOmnitrust.png' },
   { id: 3, title: 'commercial', image: '/commercial.jpg' },
 ];
 
@@ -45,16 +45,14 @@ export default function HeroSection() {
           transition: "width 0.8s ease, transform 0.5s ease",
         }}
       >
-        <Image
+              <Image
           src={img.image}
-            loading="lazy" 
           alt={img.title}
-          width={400}
-          height={ImageHeight}
+          fill
+          loading={img.id === 1 ? 'eager' : 'lazy'}
+          sizes="(min-width: 768px) 60vw, 100vw"
           style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
+            objectFit: 'cover',
             borderRadius: 0,
           }}
         />
@@ -99,18 +97,21 @@ export default function HeroSection() {
           >
             {heroImages.map((img) => (
               <Carousel.Item key={img.id}>
-                <Image
-                  src={img.image}
-                  alt={img.title}
-                  width={800}
-                  height={400}
-                  style={{
-                    width: '100%',
-                    height: 'auto',
-                    objectFit: 'cover',
-                    borderRadius: 0,
-                  }}
-                />
+               
+              <Image
+              src={img.image}
+              alt={img.title}
+              width={800}
+              height={400}
+              loading={img.id === 1 ? 'eager' : 'lazy'}
+              style={{
+                width: '100%',
+                height: 'auto',
+                objectFit: 'cover',
+                borderRadius: 0,
+              }}
+            />
+
                 <Carousel.Caption
                   className="text-start"
                   style={{

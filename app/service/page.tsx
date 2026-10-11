@@ -17,9 +17,9 @@ export default function service_page(){
   const [modalContent, setModalContent] = useState<{ title: string; body: string; image: string } | null>(null);
 
   const projects = [
-    { title: 'Khan Mansion', body: 'plot-18,Road-05,Section-06,Mirpur-11,Dhaka-1216.', image: '/prospectus4.png' },
+    { title: 'Shipu Omnitrut', body: 'Sagufta NM Housing, Plot #2904/a, Block #H, Road #05, Mirpur, Dhaka-1216', image: '/ShipuOmnitrust.png' },
    
-     { title: 'Oparajita Mension', body: 'House No #13&#15, Road #01 Block #F, Section #11, Mirpur, Dhaka-1316', image: '/prospectus8.png' }
+     { title: 'Omnitrust Tania', body: 'Bashundhara R/A, Block #L, Dhaka-1229', image: '/OmnitrustTania.jpg' }
   ];
 
   const handleOpenModal = (project: { title: string; body: string; image: string }) => {
@@ -96,19 +96,25 @@ export default function service_page(){
       </section>
       <section className="py-4">
       <div className="container">
-        <h4 className="fw-bold text-center mb-4">Handover projects</h4>
-        <div className="row justify-content-center g-3">
-          {projects.map((project, idx) => (
-            <div
-              key={idx}
-              className="col-12 col-md-3 shadow p-2"
-              style={{ cursor: 'pointer' }}
-              onClick={() => handleOpenModal(project)}
-            >
-              <Card title={project.title} body={project.body} bgimg={project.image} />
-            </div>
-          ))}
-        </div>
+        <h4 className="fw-bold text-center mb-4">Ongoing projects</h4>
+       <div className="row justify-content-center g-4">
+  {projects.map((project, idx) => (
+    <div
+      key={idx}
+      className="col-12 col-md-6 col-lg-5"
+      style={{ cursor: "pointer" }}
+      onClick={() => handleOpenModal(project)}
+    >
+      <div className="shadow rounded p-3 h-100">
+        <Card
+          title={project.title}
+          body={project.body}
+          bgimg={project.image}
+        />
+      </div>
+    </div>
+  ))}
+</div>
       </div>
 
       {/* 🔹 Modal */}
@@ -127,16 +133,19 @@ export default function service_page(){
       </Modal>
     </section>
          <section className='container-fluid bg-white py-4'>
-          <h4 className='fw-bold text-center'>Ongoing Project</h4>
+          <h4 className='fw-bold text-center'>Handover Projects</h4>
             <div className='container'>
               <Carousel />
 
             </div>
         </section>
 
+        {/*
          <section>
               <UnderDevelopment />
             </section>
+
+            */}
         </>
     );
 }

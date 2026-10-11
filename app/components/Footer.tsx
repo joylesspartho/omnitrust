@@ -12,7 +12,7 @@ export default function Footer() {
                 <b>Corporate office:</b>
               <ul className="list-unstyled">
                 <li>
-                   Mohakhali DOHS, Road #29, House #399 Dhaka-1206
+                  <b>Address:</b> Suite #B-01, House#442, Road#30, DOHS Mohakhali, Dhaka-1206
                 </li>
                 
                 <li>
@@ -20,7 +20,7 @@ export default function Footer() {
                 </li>
                 
                  <li>
-                  <b>E-mail:</b> <a href="gmail.com">info@omnitrust.com.bd</a>
+                  <b>E-mail:</b> <a href="mailto:info@omnitrust.com.bd">info@omnitrust.com.bd</a>
                 </li>
                
               </ul>
@@ -30,7 +30,7 @@ export default function Footer() {
                 <b>Basundhara  Office:</b>
               <ul className="list-unstyled">
                 <li>
-                   Rupayan Shopping Square, Level 05 Unit-603/C, Plot #02, Block-G, Basundhara R/A, Dhaka-1229
+                   Rupayan Square, Level 05 Unit-603/C, Plot#02, Block-G, Basundhara R/A, Dhaka-1229
                 </li>
                 
                
@@ -66,7 +66,7 @@ export default function Footer() {
                 <li className="mt-2 d-flex justify-content-around">
                   <a
                     className="text-white mr-3"
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/omnitrustbd"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -76,7 +76,7 @@ export default function Footer() {
 
                   <a
                     className="text-white"
-                    href="https://www.facebook.com"
+                    href="https://www.facebook.com/OmnitrustBD"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -87,7 +87,7 @@ export default function Footer() {
                
                   <a
                     className="text-white"
-                    href="https://youtube.com"
+                    href="https://www.youtube.com/channel/UC9dUaKF2jYOFTpg9WrdtVpA"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

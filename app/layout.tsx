@@ -3,7 +3,7 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { ReactNode } from 'react';
 import Script from 'next/script';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,9 +14,10 @@ export const metadata: Metadata = {
   title: 'Omnitrust Properties Ltd. | Trusted Real Estate & Development Company',
   description:
     'Omnitrust Properties is a leading real estate and property development company in Bangladesh, delivering high-quality residential, commercial, and luxury projects. Your trusted partner for investment and property development.',
+
   keywords: [
-     'Omnitrust Properties Ltd. Bangladesh',
-     'omnitrust',
+    'Omnitrust Properties Ltd. Bangladesh',
+    'omnitrust',
     'Real Estate',
     'Property Developer',
     'Residential Properties',
@@ -26,38 +27,56 @@ export const metadata: Metadata = {
     'Property Development',
     'Bangladesh Real Estate',
   ],
-  authors: [{ name: 'Omnitrust', url: 'https://www.omnitrust.com.bd/' }],
-  viewport: 'width=device-width, initial-scale=1',
 
-   verification: {
-    google: '9db29b44489087b8', 
+  authors: [
+    {
+      name: 'Omnitrust',
+      url: 'https://www.omnitrust.com.bd',
+    },
+  ],
+
+  verification: {
+    google: '9db29b44489087b8',
   },
-  // Favicon
+
   icons: {
-    icon: '/omnitrust logo website.png',
+    icon: [
+      {
+        url: '/favicon.ico',
+        sizes: '32x32',
+        type: 'image/x-icon',
+      },
+    ],
   },
 };
 
-export const dynamic = "force-static";
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export const dynamic = 'force-static';
+
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
-        {/* Font Awesome Kit */}
         <Script
           src="https://kit.fontawesome.com/81742b801a.js"
-          crossOrigin="anonymous"
           strategy="lazyOnload"
-        
+          crossOrigin="anonymous"
         />
       </head>
+
       <body className={inter.className}>
         <Navbar />
         {children}
-        <Footer/>
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }
-
