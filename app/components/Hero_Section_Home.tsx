@@ -77,61 +77,76 @@ export default function HeroSection() {
 
 
         {/* Mobile Carousel */}
-        <div className="d-md-none">
-          <Carousel
-            interval={6000}   
-            indicators={true}
-            wrap={true}      
-            prevIcon={
-              <span
-                className="carousel-control-prev-icon bg-dark rounded-circle"
-                aria-hidden="true"
-              />
-            }
-            nextIcon={
-              <span
-                className="carousel-control-next-icon bg-dark rounded-circle"
-                aria-hidden="true"
-              />
-            }
-          >
-            {heroImages.map((img) => (
-              <Carousel.Item key={img.id}>
-               
-              <Image
-              src={img.image}
-              alt={img.title}
-              width={800}
-              height={400}
-              loading={img.id === 1 ? 'eager' : 'lazy'}
-              style={{
-                width: '100%',
-                height: 'auto',
-                objectFit: 'cover',
-                borderRadius: 0,
-              }}
-            />
+        
+ 
 
-                <Carousel.Caption
-                  className="text-start"
-                  style={{
-                    bottom: '0',
-                    left: '0',
-                    right: '0',
-                    padding: '1rem',
-                    backgroundColor: 'rgba(0,0,0,0.4)',
-                  }}
-                >
-                  <div
-                    style={{ borderBottom: '2px solid white', paddingBottom: '0.5rem' }}
-                  >
-                    {img.title}
-                  </div>
-                </Carousel.Caption>
-              </Carousel.Item>
-            ))}
-          </Carousel>
+ <div className="d-md-none">
+  <Carousel
+    interval={6000}  
+    indicators={true}
+    wrap={true}      
+    prevLabel=""  
+    nextLabel=""  
+    prevIcon={
+      <span
+        className="carousel-control-prev-icon bg-dark rounded-circle p-3"
+        aria-hidden="true"
+      />
+    }
+    nextIcon={
+      <span
+        className="carousel-control-next-icon bg-dark rounded-circle p-3"
+        aria-hidden="true"
+      />
+    }
+  >
+    {heroImages.map((img) => (
+      <Carousel.Item key={img.id}>
+        <div style={{ position: 'relative', width: '100%', height: '250px' }}>
+          <Image
+            src={img.image}
+            alt={img.title}
+            fill
+            sizes="100vw"
+            priority={img.id === 1}
+            style={{
+              objectFit: 'cover',
+            }}
+          />
         </div>
+
+        <Carousel.Caption
+          className="text-start"
+          style={{
+            bottom: '0',
+            left: '0',
+            right: '0',
+            padding: '0.75rem 1rem',
+            backgroundColor: 'rgba(0,0,0,0.5)',
+          }}
+        >
+          <div
+            style={{ borderBottom: '2px solid white', paddingBottom: '0.25rem', fontSize: '0.9rem' }}
+          >
+            {img.title}
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+    ))}
+  </Carousel>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </section>
   );

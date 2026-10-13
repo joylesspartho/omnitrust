@@ -26,6 +26,7 @@ export default function AboutPage() {
     { title: 'S. M. Morshed', body: 'Vice Chairman', email:'morshed@example.com', image: '/hidden profile.jpg' },
     { title: 'Md. Abdul Mannan', body: 'Director', email:'abdul.mannan@example.com', image: '/hidden profile.jpg' },
     { title: 'Md. Ripon Kabir Laskar', body: 'Director', email:'ripon@example.com', image: '/hidden profile.jpg' },
+     { title: 'Brig Gen Md Zillal Hossain, psc (RETD)', body: 'Director', email:'zillal@example.com', image: '/hidden profile.jpg' },
     { title: 'A. F. M. Kalam Uddin', body: 'Director', email:'kalam@example.com', image: '/hidden profile.jpg' },
     { title: 'Abdul Jalil Liton', body: 'Director', email:'liton@example.com', image: '/hidden profile.jpg' },
     { title: 'Md. Rakibul Islam', body: 'Director', email:'rakibul@example.com', image: '/hidden profile.jpg' },
@@ -218,25 +219,48 @@ Becoming synonymous with trust, quality, and excellence in development and prope
 
      
 
-      {/* Managing Team  */}
-      <section className='py-4 bg-light container-fluid'>
+      
+      {/* Managing Team / Board of Directors */}
+      <section className='py-5 bg-white'>
         <div className='container'>
-          <h4 className='text-center mb-4'>Board of Directors</h4>
-        <div className='d-flex flex-wrap justify-content-center justify-content-around'>
-          {managingTeam.map((member, idx) => (
-            <div 
-              className='shadow m-2' 
-              key={idx} 
-              style={{ cursor: 'pointer', fontSize: '14pt' }}
-              onClick={() => {
-                setModalContent(member);
-                setShowModal(true);
-              }}
-            >
-              <Card bgimg={member.image} title={member.title} body={member.body} />
-            </div>
-          ))}
-        </div>
+          <div className="text-center mb-5">
+            <h3 className='fw-bold text-primary'>Board of Directors</h3>
+            <p className="text-muted">Meet the visionary leaders driving our company forward</p>
+          </div>
+
+          <div className='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 gy-4'>
+            {managingTeam.map((member, idx) => (
+              <div className='col' key={idx}>
+                <div 
+                  className='card h-100 border-0 shadow-sm text-center team-card p-3'
+                  style={{ 
+                    cursor: 'pointer', 
+                    transition: 'all 0.3s ease-in-out',
+                    borderRadius: '12px'
+                  }}
+                  onClick={() => {
+                    setModalContent(member);
+                    setShowModal(true);
+                  }}
+                >
+                  <div className="overflow-hidden rounded-circle mx-auto mb-3" style={{ width: '130px', height: '150px' }}>
+                    <img 
+                      src={member.image} 
+                      alt={member.title} 
+                      className="img-fluid w-100 h-100" 
+                      style={{ objectFit: 'cover' }}
+                      loading="lazy" 
+                    />
+                  </div>
+                  <h6 className='fw-bold mb-1 text-dark'>{member.title}</h6>
+                  <span className='badge bg-primary-subtle text-primary fw-semibold px-3 py-1 rounded-pill mx-auto mb-2'>
+                    {member.body}
+                  </span>
+                  <small className="text-muted d-block">{member.email}</small>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
