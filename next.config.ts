@@ -1,14 +1,13 @@
-import type { NextConfig } from 'next';
+
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
- allowedDevOrigins: ['10.205.144.210'],
-  
-
-  output: 'export',
+  output: "export",
+  basePath: "/omnittrust",
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
-  trailingSlash: true,
 };
 
 export default nextConfig;
