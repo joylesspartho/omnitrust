@@ -47,7 +47,7 @@ export default function AppNavbar() {
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu */}
+        {/* Mobile Dropdown Menu (Toggle korle shudhu mobile-e niche show korbe) */}
         {isOpen && (
           <div className="d-lg-none d-flex flex-column mt-3 pt-2 border-top gap-2 pb-2 w-100">
             <Link href="/" className="nav-link text-dark fw-medium py-1" onClick={() => setIsOpen(false)}>
