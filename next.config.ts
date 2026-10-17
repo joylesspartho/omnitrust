@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', // Static export-er jonno eta khubi dorkar
-  allowedDevOrigins: ['10.205.144.145'],
+  output: 'export', 
+  allowedDevOrigins: ['10.93.27.251'],
   images: {
     unoptimized: true,
   },
