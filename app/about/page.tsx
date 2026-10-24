@@ -221,14 +221,14 @@ Becoming synonymous with trust, quality, and excellence in development and prope
 
       
       {/* Managing Team / Board of Directors */}
-      <section className='py-5 bg-white'>
-        <div className='container'>
+      <section className='py-5 '>
+        <div className='container bg-light pb-5'>
           <div className="text-center mb-5">
             <h3 className='fw-bold text-primary'>Board of Directors</h3>
             <p className="text-muted">Meet the visionary leaders driving our company forward</p>
           </div>
 
-          <div className='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 gy-4'>
+          <div className='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 align-items-center'>
             {managingTeam.map((member, idx) => (
               <div className='col' key={idx}>
                 <div 

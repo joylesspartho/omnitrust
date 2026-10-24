@@ -9,6 +9,7 @@ const heroImages = [
   { id: 1, title: 'Luxury', image: '/ShipuOmnitrust.png' },
   { id: 2, title: 'Urban', image: '/OmnitrustTania.jpg' },
   { id: 3, title: 'commercial', image: '/hero03.png' },
+  { id: 4, title: 'Residential', image: '/hero_img_04.png' },
 ];
 
 export default function HeroSection() {
