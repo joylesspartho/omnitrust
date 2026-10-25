@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+ 
 
 const heroImages = [
 
@@ -13,10 +13,10 @@ const heroImages = [
    { id: 2, title: 'Alomgir Khan Tower', image: '/prospectus3.png' },
 
  { id: 3, title: 'Najirer Shopno Nonunai', image: '/prospectus5.png' },
-{ id: 4, title: 'Twin Tower', image: '/prospectus6.png' },
-  { id: 5, title: 'Zerin Garden', image: '/prospectus7.png' },
 
-   { id: 6, title: 'Hanif tower', image: '/prospectus9.png' },
+  { id: 4, title: 'Zerin Garden', image: '/prospectus7.png' },
+
+   { id: 5  , title: 'Hanif tower', image: '/prospectus9.png' },
 ];
 
 export default function My_Carousel() {
